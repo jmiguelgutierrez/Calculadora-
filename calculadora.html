@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css"> 
+    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=sL8R0wRcg6r0QhlXMHGx75CVUhebR-WfPPlHT3xSlkZc_P4E-JQNIFWa1-XcA1UClJaYfZfFusIo_qGygyH5qQ95TOWgfbs6AnjkoV0pB0epXcDo0sa2QHGFZA4_RVH_l-NrzZyKVG1j7kPk9xkYqVv6XxT9msjBkNebZB8JePisc7bcvx3a7Rc0VRbDkZbpuuj-a_7gPeUsyUjQBo6db0jaYUE3vdRixb0zzhjdweqPf2uyJ2SICAkNcK7L1WJ9wkHs6vJwqOkFYXDfAaVjVMpQr2tAdIBIfgfTUA4QngYLu5E9GgG4XotcYlSu_X4ouhSYQq1dHmvzjJIfqU23aA" charset="UTF-8"></script><script src="./js/scriptcalculadora.js"></script>
+    <title>Document</title>
+</head>
+
+<body background="#0a0af5">
+    <br><br><br><br><br><br>
+    <table border="1" align="center">
+        <tr width="60px">
+            <td colspan="4" width="50px" height="30px"><input type="text" id="display" onkeyup="validarNumero(this)" onmouseup="validarNumero(this)"></td>
+            <td><input type="text" id="displayOP"></td>
+        </tr>
+        </tr>
+        <tr>
+            <td align="center"><button id="b1" numero="1" onclick="pulsaTecla(this)">1</button></td>
+            <td align="center"><button id="b2" numero="2" onclick="pulsaTecla(this)">2</button></td>
+            <td align="center"><button id="b3" numero="3" onclick="pulsaTecla(this)">3</button></td>
+            <td align="center"><button id="bsuma" tipo="1" onclick="operacion(this)">+</button></td>
+        </tr>
+        <tr>
+            <td align="center"><button id="b4" numero="4" onclick="pulsaTecla(this)">4</button></td>
+            <td align="center"><button id="b5" numero="5" onclick="pulsaTecla(this)">5</button></td>
+            <td align="center"><button id="b6" numero="6" onclick="pulsaTecla(this)">6</button></td>
+            <td align="center"><button id="bresta" tipo="2" onclick="operacion(this)">-</button></td>
+        </tr>
+        <tr>
+            <td align="center"><button id="b7" numero="7" onclick="pulsaTecla(this)">7</button></td>
+            <td align="center"><button id="b8" numero="8" onclick="pulsaTecla(this)">8</button></td>
+            <td align="center"><button id="b9" numero="9" onclick="pulsaTecla(this)">9</button></td>
+            <td align="center"><button id="bmult" tipo="3" onclick="operacion(this)">*</button></td>
+        </tr>
+        <tr>
+            <td align="center"><button id="bmasmenos" numero="masmenos" tipo="6"onclick="masmenos(this)">+/-</button></td>
+            <td align="center"><button id="b0" numero="0" onclick="pulsaTecla(this)">0</button></td>
+            <td align="center"><button id="bcoma" numero="," onclick="pulsaTecla(this)">,</button></td>
+            <td align="center"><button id="bdiv" tipo="4" onclick="operacion(this)">/</button></td>
+        </tr>
+        <tr>
+            <td align="center"><button id="bborrarpanel" numero="c" onclick="borrarpantalla(this)">C</button> </td>
+            <td align="center"><button id="bborrar" numero="b" onclick="borrar(this)">B</button></td>
+            <td colspan=2 align="center"><button id="igual" numero="=" onclick="igual(this)">=</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>
